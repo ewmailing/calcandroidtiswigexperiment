@@ -1,0 +1,18 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name CalcBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "org.appcelerator.calc.CalcModule.h"
+#include "org.appcelerator.calc.ExampleProxy.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+org.appcelerator.calc.CalcModule, ::org::appcelerator::calc::CalcModule::bindProxy, ::org::appcelerator::calc::CalcModule::dispose
+org.appcelerator.calc.ExampleProxy, ::org::appcelerator::calc::calc::ExampleProxy::bindProxy, ::org::appcelerator::calc::calc::ExampleProxy::dispose
+%%

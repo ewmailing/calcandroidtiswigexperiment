@@ -16,4 +16,3 @@ moduleid: org.appcelerator.calc
 guid: 9be41dac-54c3-4311-bd22-678b1360f547
 platform: android
 minsdk: 2.1.4.GA
-commonjs: true
